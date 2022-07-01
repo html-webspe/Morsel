@@ -9692,7 +9692,7 @@ PERFORMANCE OF THIS SOFTWARE.
             return new LightGallery(el, options);
         }
         const lightgallery_es5 = lightGallery;
-        __webpack_require__(363);
+        var lg_video_min = __webpack_require__(363);
         const galleries = document.querySelectorAll("[data-gallery]");
         if (galleries.length) {
             let galleyItems = [];
@@ -9706,6 +9706,20 @@ PERFORMANCE OF THIS SOFTWARE.
                 });
             }));
             flsModules.gallery = galleyItems;
+        }
+        const galleriesVideo = document.querySelectorAll("[data-gallery-video]");
+        if (galleriesVideo.length) {
+            let galleyVideoItems = [];
+            galleriesVideo.forEach((galleryVideo => {
+                galleyVideoItems.push({
+                    galleryVideo,
+                    galleryClass: lightgallery_es5(galleryVideo, {
+                        plugins: [ lg_video_min ],
+                        licenseKey: "7EC452A9-0CFD441C-BD984C7C-17C8456E"
+                    })
+                });
+            }));
+            flsModules.gallery = galleyVideoItems;
         }
         window.addEventListener("load", windowLoad);
         function windowLoad() {
