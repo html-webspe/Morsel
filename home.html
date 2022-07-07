@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220701213515">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220707132235">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,7 +67,7 @@
 			</svg>
 		</div>
 
-		<header class="header header-secondary">
+		<header data-scroll="20" class="header header-secondary">
 			<div class="header__container">
 				<a href="/" class="header__logo">
 					<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип"></picture>
@@ -149,7 +149,7 @@
 				</div>
 
 				<button data-popup=".popup-callback" type="button" class="page-action__button button">Оставить заявку
-					<svg width="58" height="19" aria-hidden="true">
+					<svg aria-hidden="true">
 						<use xlink:href="#arrow"></use>
 					</svg>
 				</button>
@@ -474,7 +474,7 @@
 						</div>
 					</div>
 
-					<div class="portfolio__footer">
+					<div id="portfolio-company" class="portfolio__footer">
 						<p class="portfolio__footer-text">И ещё 78 проектов для</p>
 						<div class="portfolio__companies">
 							<div class="companies-slider companies-slider--1 swiper-container">
@@ -808,7 +808,7 @@
 
 					<div class="news__body">
 						<a href="" class="btn news__btn">все Публикации
-							<svg width="58" height="19" aria-hidden="true">
+							<svg aria-hidden="true">
 								<use xlink:href="#arrow"></use>
 							</svg>
 						</a>
@@ -866,7 +866,7 @@
 										<input autocomplete="off" data-validate data-required type="tel" name="phone" data-error="Обязатальное поле" placeholder="Телефон*" class="input">
 									</div>
 									<div class="form__row">
-										<textarea data-autoheight name="massage" placeholder="Сообщение..."></textarea>
+										<textarea name="massage" placeholder="Сообщение..."></textarea>
 									</div>
 								</fieldset>
 								<div class="form__row form__row-button">
@@ -984,7 +984,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220701213515"></script>
+	<script src="js/app.min.js?_v=20220707132235"></script>
 </body>
 
 </html>
