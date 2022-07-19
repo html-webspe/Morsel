@@ -5160,7 +5160,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .main-reviews__item-title {
     font-size: 18px;
     line-height: 1.3333333333;
-    margin-bottom: 1.125rem;
   }
 
   .more-reviews__title {
@@ -5168,6 +5167,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     line-height: 1.1052631579;
     text-align: left;
     margin-bottom: 5rem;
+  }
+
+  .more-reviews__item-company {
+    font-size: 18px;
+    line-height: 1.3333333333;
   }
 
   .news {
