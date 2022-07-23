@@ -5985,7 +5985,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .reviews__body {
     border-radius: 15px;
-    padding: 50px 8px 50px 20px;
+    padding: 50px 0 50px 20px;
   }
 
   .reviews__main {

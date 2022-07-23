@@ -7836,7 +7836,7 @@
                 },
                 breakpoints: {
                     320: {
-                        slidesPerView: "auto",
+                        slidesPerView: 2.5,
                         spaceBetween: 20
                     },
                     768: {
@@ -7932,9 +7932,8 @@
             const headerShow = header.hasAttribute("data-scroll-show");
             const headerShowTimer = header.dataset.scrollShow ? header.dataset.scrollShow : 500;
             const startPoint = header.dataset.scroll ? header.dataset.scroll : 1;
-            const wrapper = document.querySelector(".main-top-js");
+            const main = document.querySelector(".main-top-js");
             const headerOffset = header.offsetHeight;
-            console.log(headerOffset);
             let scrollDirection = 0;
             let timer;
             document.addEventListener("windowScroll", (function(e) {
@@ -7942,7 +7941,7 @@
                 clearTimeout(timer);
                 if (scrollTop >= startPoint) {
                     !header.classList.contains("_header-scroll") ? header.classList.add("_header-scroll") : null;
-                    wrapper.style.paddingTop = headerOffset + "px";
+                    if (main) main.style.paddingTop = headerOffset + "px";
                     if (headerShow) {
                         if (scrollTop > scrollDirection) header.classList.contains("_header-show") ? header.classList.remove("_header-show") : null; else !header.classList.contains("_header-show") ? header.classList.add("_header-show") : null;
                         timer = setTimeout((() => {
@@ -7951,7 +7950,7 @@
                     }
                 } else {
                     header.classList.contains("_header-scroll") ? header.classList.remove("_header-scroll") : null;
-                    wrapper.style.paddingTop = "0";
+                    main.style.paddingTop = "0";
                     if (headerShow) header.classList.contains("_header-show") ? header.classList.remove("_header-show") : null;
                 }
                 scrollDirection = scrollTop <= 0 ? 0 : scrollTop;
