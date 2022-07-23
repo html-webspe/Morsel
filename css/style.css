@@ -525,19 +525,6 @@ body::after {
   top: -30px;
   right: -20px;
   z-index: 11;
-  /*@media (max-width:$mobile){
-  	top: 10px;
-  	right: 11px;
-  	width: 15px;
-  	height: 15px;  
-  }
-  @media (min-width:$mobile){
-  	width: 35px;
-  	height: 30px;
-  	position: absolute;
-  	top: -30px;
-  	right: -20px;
-  }*/
 }
 
 .callback__subtitle,
@@ -6112,6 +6099,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 29.99875em) {
+  .callback__close,
+  .message__close {
+    right: 0;
+  }
+
   .main-page .contacts__title {
     max-width: 20rem;
   }
