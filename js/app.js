@@ -7810,10 +7810,11 @@
                 wrapperClass: "swiper-wrapper",
                 scrollbar: {
                     el: ".swiper-scrollbar",
-                    draggable: true
+                    draggable: true,
+                    hide: true
                 },
                 breakpoints: {
-                    768: {
+                    767.98: {
                         slidesPerView: 3,
                         spaceBetween: 16
                     },
@@ -7830,7 +7831,8 @@
                 speed: 800,
                 scrollbar: {
                     el: ".swiper-scrollbar",
-                    draggable: true
+                    draggable: true,
+                    hide: true
                 },
                 breakpoints: {
                     320: {
@@ -7854,7 +7856,8 @@
                 speed: 800,
                 scrollbar: {
                     el: ".swiper-scrollbar",
-                    draggable: true
+                    draggable: true,
+                    hide: true
                 },
                 breakpoints: {
                     320: {
@@ -7929,7 +7932,7 @@
             const headerShow = header.hasAttribute("data-scroll-show");
             const headerShowTimer = header.dataset.scrollShow ? header.dataset.scrollShow : 500;
             const startPoint = header.dataset.scroll ? header.dataset.scroll : 1;
-            const wrapper = document.querySelector(".wrapper");
+            const wrapper = document.querySelector(".main-top-js");
             const headerOffset = header.offsetHeight;
             console.log(headerOffset);
             let scrollDirection = 0;
